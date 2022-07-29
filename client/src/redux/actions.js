@@ -11,7 +11,7 @@ export function getText(text) {
         
     try {
 
-      const json = await axios.get(`http://localhost:3001/iecho?text=${text}`);
+      const json = await axios.get(`https://cwtech-challengeapp.herokuapp.com/iecho?text=${text}`);
       // console.log(json.data)
 
       return dispatch (
